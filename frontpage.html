@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingrid Profile</title>
+    <link rel="stylesheet" href="./page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="header" id="header">
+      <h1>Hi, My Name is Ingrid</h1>
+      <h3>--Happiness in Glittering Ocean--</h3>
+    </div>
+
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="navbar-left">
+        <a href="#" class="active">Home</a>
+        <a href="https://www.linkedin.com/in/ingrid-fortunata-5b46ab145"
+          >Follow my Linkedin</a
+        >
+        <a href="https://www.instagram.com/ingrid_fortunata/"
+          >Follow my Instagram</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1e9qsIRKJPc6Fw3W0WR56siTv93G-sGcQ/view?usp=sharing"
+          >See My Full Resume</a
+        >
+      </div>
+      <div class="navbar-right">
+        <a class="right" id="changebody" onclick="changeHeaderPicture()"
+          >Click Me!!!</a
+        >
+      </div>
+    </div>
+
+    <!-- main page -->
+    <div class="mainpage">
+      <!-- LEFT main page with 3 sections: aboutme, personalinfo, experiences-->
+      <div class="mainpage-left">
+        <div class="aboutme">
+          <h3>About Me</h3>
+          <img src="./images/me.jpg" /> <br />
+          <p>
+            I am a creative and communicative person with a previous background
+            in pharmacy and experience in business development, project
+            management, and costumer relationship. I'm seeking to take next
+            career step focused on Front-end developer to utilize my creativity,
+            knowledge, and skills because in nowadays business needs attention
+            in technology (especially website) to improve engagement with
+            business partners. Leading, motivating, and able to work
+            individually as well in teams to achieve project goals and achieving
+            a high-degree of client satisfaction.
+          </p>
+        </div>
+
+        <div class="personalinfo">
+          <h3>Personal Info & Education</h3>
+          <table>
+            <tr>
+              <td>Email :</td>
+              <td colspan="3">ingrid_fortunata@yahoo.com</td>
+            </tr>
+            <tr>
+              <td>Phone :</td>
+              <td colspan="3">+62 896 2423 6415</td>
+            </tr>
+            <tr>
+              <td>DOB :</td>
+              <td colspan="3">October 1st, 1994</td>
+            </tr>
+            <tr>
+              <td>Informal Education :</td>
+              <td>Glints Academy - Binar Academy Batch 10</td>
+              <td>
+                Year: <br />
+                Dec 2020 - Mar 2021
+              </td>
+              <td>Front End</td>
+            </tr>
+            <tr>
+              <td>Formal Education :</td>
+              <td>University of Indonesia</td>
+              <td>
+                Year: <br />
+                2012 - 2017
+              </td>
+              <td>Apothecary Degree</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="experience">
+          <h3>Experiences</h3>
+          <button class="accordion">
+            <b>Business Development Executive</b>
+          </button>
+          <div class="acor_panel">
+            <br /><b>PT Megasetia Agung Kimia</b><br />
+            2019-2020<br /><br />
+            <b>Job Desc</b><br />
+            <p>
+              Market research, sales report, projects management, products
+              management, customer services. Other projects: exhibition,
+              designing prototype and exhibition materials.
+            </p>
+            <br />
+          </div>
+          <br />
+
+          <button class="accordion">
+            <b>International Business Development Officer</b>
+          </button>
+          <div class="acor_panel">
+            <br /><b>PT Bernofarm</b><br />
+            2018-2019<br /><br />
+            <b>Job Desc</b><br />
+            <p>
+              Market research, sales report, projects management, products
+              management, customer services. Other projects: exhibition,
+              designing products list and website.
+            </p>
+            <br />
+          </div>
+          <br />
+
+          <button class="accordion">
+            <b>International Business Development Officer</b>
+          </button>
+          <div class="acor_panel">
+            <br /><b>PT Dexa Medica</b><br />
+            2017<br /><br />
+            <b>Job Desc</b><br />
+            <p>
+              Sourcing and purchasing packaging materials, suppliers management.
+            </p>
+            <br />
+          </div>
+          <br />
+        </div>
+
+        <div class="computer-skills">
+          <h3>Computer Skills</h3>
+          <button class="accordion"><b>Advanced</b></button>
+          <div class="acor_panel">
+            <br />
+            <p>HTML, Canva, Microsoft Office</p>
+            <br />
+          </div>
+          <br />
+
+          <button class="accordion"><b>Moderate</b></button>
+          <div class="acor_panel">
+            <br />
+            <p>CSS, Wordpress (Elementor)</p>
+            <br />
+          </div>
+          <br />
+
+          <button class="accordion"><b>Beginner</b></button>
+          <div class="acor_panel">
+            <br />
+            <p>Javascript, SQL, Adobe Photoshop, Git, Prezi</p>
+            <br />
+          </div>
+          <br />
+        </div>
+      </div>
+
+      <!-- RIGHT main page with sections: material-head, material-->
+      <div class="mainpage-right">
+        <div class="material-head">
+          <h1>My Recent Works / Projects</h1>
+        </div>
+
+        <div class="material">
+          <h2>Whiteboard</h2>
+          <h4>Trello App - Final Project, March 17th, 2021</h4>
+          <img
+            class="img_focus"
+            src="./images/Whiteboard.PNG"
+            alt="Whiteboard Final Project"
+          />
+          <p>
+            This is a final project in Glints-Binar Academy batch 10 (in team).
+            We made a to-do app similar to Trello using React JS (using Redux
+            Thunk & Persist), Sass, and Backend team API.
+          </p>
+          <p>
+            To view:
+            <a href="https://app-whiteboard.herokuapp.com/"
+              >https://app-whiteboard.herokuapp.com/</a
+            >
+          </p>
+        </div>
+        <div class="material">
+          <h2>Actflix</h2>
+          <h4>Movie App - Mini Project, Feb 8th, 2021</h4>
+          <img
+            class="img_focus"
+            src="./images/Actflix.PNG"
+            alt="Actflix Mini Project"
+          />
+          <p>
+            This is a mini project in Glints-Binar Academy batch 10 (in team).
+            We made a movie app similar to Netflix using React JS, CSS, tmdb
+            API, and firebase for login and signup.
+          </p>
+          <p>
+            To view:
+            <a href="https://actflix03.herokuapp.com/"
+              >https://actflix03.herokuapp.com/</a
+            >
+          </p>
+        </div>
+        <div class="material">
+          <h2>Catch Pokemon App</h2>
+          <h4>Catch Pokemon Project, Jan 20th, 2021</h4>
+          <img
+            class="img_focus"
+            src="./images/PokemonApp.PNG"
+            alt="Pokemon Project"
+          />
+          <p>
+            This is a small project by myself while in Glints-Binar Academy
+            batch 10 class. I made a simple catch pokemon card app using React
+            JS, CSS, and pokemon API. The search field is functioning well too!
+          </p>
+          <p>
+            To view the code:
+            <a
+              href="https://gitlab.com/ingrid-fortunata/pokemon-catch-app-ingrid"
+              >https://gitlab.com/ingrid-fortunata/pokemon-catch-app-ingrid</a
+            >
+          </p>
+        </div>
+        <div class="material">
+          <h2>Profile Page</h2>
+          <h4>Profile Page Project, Jan 4th, 2021</h4>
+          <img
+            class="img_focus"
+            src="./images/ProfileSelf.PNG"
+            alt="Profile Project"
+          />
+          <p>
+            This is just a simple project by Binar class while in Glints-Binar
+            Academy batch 10. I made my own profile page (this one) using HTML,
+            CSS, and Javascript.
+          </p>
+          <p>
+            To view the code:
+            <a href="https://gitlab.com/ingrid-fortunata/digital-clock-ingrid"
+              >https://gitlab.com/ingrid-fortunata/digital-clock-ingrid</a
+            >
+          </p>
+        </div>
+        <div class="material">
+          <h2>Digital Clock</h2>
+          <h4>Digital Clock Project, Jan 4th, 2021</h4>
+          <img
+            class="img_focus"
+            src="./images/JavascriptClock.PNG"
+            alt="Digital Clock Project"
+          />
+          <p>
+            This is just a simple project by myself while in Glints-Binar
+            Academy batch 10. I made a simple realtime digital clock using HTML,
+            CSS, and Javascript.
+          </p>
+          <p>
+            To view the code:
+            <a href="https://gitlab.com/ingrid-fortunata/digital-clock-ingrid"
+              >https://gitlab.com/ingrid-fortunata/digital-clock-ingrid</a
+            >
+          </p>
+        </div>
+        <div class="material">
+          <h2>Delova</h2>
+          <h4>Dessert Restaurant Website Project, Nov 12th, 2020</h4>
+          <img
+            class="img_focus"
+            src="./images/delova-project.PNG"
+            alt="Delova Project"
+          />
+          <p>
+            This is a final Project for Habis Kerja.com scholarship which I
+            learn about the website design, including UI/UX. I made a simple
+            responsive website using Wordpress utilized with Elementor.
+          </p>
+          <p>
+            To view:
+            <a href="http://delova.000webhostapp.com/"
+              >http://delova.000webhostapp.com/</a
+            >
+          </p>
+        </div>
+        <div class="material">
+          <h2>Collagen Drinks</h2>
+          <h4>PT. Megasetia Agung Kimia Hampers Project, Dec 25th, 2019</h4>
+          <img
+            class="img_focus"
+            src="./images/collagen-pouch.PNG"
+            alt="MAK Collagen Project"
+          />
+          <p>
+            This is Christmas Hampers Project for PT. Megasetia Agung Kimia
+            which I designed it with Canva.
+          </p>
+        </div>
+        <div class="material">
+          <h2>Astaxanthin-Glutathione Drinks</h2>
+          <h4>PT. Megasetia Agung Kimia Exhibition Project, Nov 1th, 2019</h4>
+          <img
+            class="img_focus"
+            src="./images/astra-project2.PNG"
+            alt="MAK Astaxanthin-Glutathione Project"
+          />
+          <p>
+            This is Prototype Packaging Design Project for PT. Megasetia Agung
+            Kimia which I designed it with Canva.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <h3>Made by &copy;Ingrid</h3>
+    </div>
+
+    <!-- Zoom out Material Image (from RIGHT Main Page) -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" />
+      <div id="caption"></div>
+    </div>
+
+    <script src="./page.js"></script>
+  </body>
+</html>
